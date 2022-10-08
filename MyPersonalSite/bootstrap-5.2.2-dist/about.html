@@ -10,7 +10,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="TWlogo.png" style="height:50px;" alt="navbar-logo"/></a>
+          <a class="navbar-brand" href="index.html"><img src="TWlogo.png" style="height:50px;"/></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,9 +20,9 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="about.html">About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a class="nav-link active" href="contact.html">
                   Contact
                 </a>
@@ -40,10 +40,32 @@
 </header>
 <body>
     <div id="logo-content">
-        <h1 style="text-align:center;">Tochway Consulting Inc.</h1>
+        <h1 style="text-align:center;">About Tochway Consulting Inc.</h1>
         <br>
         <br>
-        <img src="TWlogo.png" class="rounded mx-auto d-block" alt="logo">
+        <div id="overview">
+            <p class="text-center">Hey! My name is Tochukwu Nwakalor and I am an undergraduate student at the University of North Carolina at Charlotte. My major is in <b>Computer Science</b> with a Concentration in <b>Software Engineering</b>.</p>
+            <br>
+            <ul>
+                I am proficient in the following technologies and programming languages:
+                <li class="fw-bold">Java</li>
+                <li class="fw-bold">Python</li>
+                <li class="fw-bold">Bootstrap</li>
+                <li class="fw-bold">Flask</li>
+                <li class="fw-bold">Javascript</li>
+            </ul>
+            <br>
+            <ol>
+                I have taken a number of computer science courses. Here are some of them:
+                <li class="fw-bold">Introduction to Computer Science I</li>
+                <li class="fw-bold">Introduction to Computer Science II</li>
+                <li class="fw-bold">Data Structures and Algorithms</li>
+            </ol>
+
+            <p class="text-center">Check out my <a href="https://github.com/tnwakal/tnwakal.github.io">Github web page repository!</a></p>
+
+        </div>
+        
     </div>
     <script src="js/bootstrap.js"></script>
 </body>

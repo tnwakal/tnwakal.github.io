@@ -36,7 +36,6 @@
                 <a class="nav-link active" href="contact.html">
                   Contact
                 </a>
-                
               </li>
              
             </ul>
@@ -54,47 +53,66 @@
         <br>
         <br>
         <div id="form">
-            <form class="row g-3 needs-validation" action="results.html" method="get">
-                
+            <form action="results.html" method="get">
                     <div class="input-group">
+                      <!-- Name input section
+                        Names for display on results page: "First Name" and "Last Name"
+                        id for first name: "fname"
+                        id for last name: "lname"
+                        aria-describedby for first name: "fname"
+                        aria-describedby for last name: "lname"
+                      -->
                         <span class="input-group-text">Full Name</span>
-                        <input type="text" aria-label="First name" class="form-control" id="fname" required>
-                        <input type="text" aria-label="Last name" class="form-control" id="lname" required>
-                         
-                   </div> 
-                   <label for="e-mail"></label> 
-                   <label for="fname"></label>
-                   <label for="lname"></label>             
+                        <input type="text" aria-label="First name" class="form-control" name="First Name" id="fname" placeholder="First name" aria-describedby="fname" required>
+                        <input type="text" aria-label="Last name" class="form-control" name="Last Name" id="lname" placeholder="last name" aria-describedby="lname" required>
+                   </div>
                     <br>
                     <div class="input-group mb-3">
+                      <!-- Email input section
+                        Name for display on results page: "Email"
+                        id for email: "email"
+                        aria-describedby for email: "email"
+                      -->
                         <span class="input-group-text" >E-mail</span>
-                        <input type="text" aria-label="E-mail" class="form-control" id="e-mail" required>
-                        <label for="e-mail"></label>
+                        <input type="email" class="form-control" name="E-mail" id="email" placeholder="Example: tochi@me.com" aria-label="E-mail" aria-describedby="email" required>
                     </div>
                                  
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Message</span>
-                        <textarea type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> </textarea>
+                      <!-- Message input section
+                        Name for display on results page: "Message"
+                        id: "message"
+                        aria-describedby: "message"
+                      -->
+                        <span class="input-group-text">Message</span>
+                        <textarea class="form-control" aria-label="With textarea" id="message" name="Message" aria-describedby="message" required></textarea>
                     </div>
-                
                 
                     <div class="form-check">
                         <p>Do you want to receive alerts about our new business offers and services?</p>
-                        <input class="form-check-input" type="radio" name="choice" id="yes">
-                        <label class="form-check-label" for="yes">
+                        <!-- Radio buttons to select yes or no
+                          Name for display on results page: "Receive Alerts"
+                          id for yes: yesButton
+                          id for no: noButton
+                          aria-describedby for yes: "yesButton"
+                          aria-describedby for no: "noButton"
+                        -->
+                        <input class="form-check-input" type="radio" name="Receive Alerts" id="yesButton" aria-describedby="yesButton">
+
+                        <label class="form-check-label" for="yesButton">
                           Yes
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="choice" id="no" style=>
-                        <label class="form-check-label" for="no">
+                        <input class="form-check-input" type="radio" name="Receive Alerts" id="noButton" aria-describedby="noButton" checked>
+                        <label class="form-check-label" for="noButton">
                           No
                         </label>
-                      </div>
-                
+
+                    </div>
+
                 <div class="col-12">
                     <button class="btn btn-primary" type="submit" style="background-color: black; border-color:black">Submit form</button>
-                  </div>                
+                </div>                
             </form>
         </div>
         
